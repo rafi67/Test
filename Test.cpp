@@ -5,12 +5,12 @@ using namespace std;
 class Shape {
 
     protected:
-        short a, b;
+        short g, h;
     
     public:
         void get_a_b(short n, short m) {
-            a = n;
-            b = m;
+            g = n;
+            h = m;
         }
 
 
