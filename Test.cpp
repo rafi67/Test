@@ -20,7 +20,7 @@ class Rectangle : public Shape {
 
     public:
         short rectangle_area() {
-            short result = a*b;
+            short result = g*h;
             return result;
         }
 
@@ -30,7 +30,7 @@ class Triangle : public Shape {
 
     public:
         float triangle_area() {
-            float result = 0.5 * a * b;
+            float result = 0.5 * h * h;
             return result;
         }
 
