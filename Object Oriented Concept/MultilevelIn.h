@@ -32,5 +32,8 @@ class BabyDog : public Dog {
             bark();
             beep();
         }
+        ~BabyDog() {
+            cout << "Destructor is called" << endl;
+        }
 
 };

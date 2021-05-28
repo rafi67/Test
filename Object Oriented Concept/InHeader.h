@@ -19,6 +19,10 @@ class B : public A {
             display(result);
         }
 
+        ~B() {
+            cout << "Destructor is called" << endl;
+        }
+
         void display(short result) {
             cout << "Result = " << result << endl;
         }

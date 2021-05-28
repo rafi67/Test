@@ -37,5 +37,8 @@ class D : public A1, public B1, public C1 {
             hello();
             car();
         }
+        ~D() {
+            cout << "Destructor is called" << endl;
+        }
 
 };
