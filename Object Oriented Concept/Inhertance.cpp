@@ -3,6 +3,7 @@
 #include "MultilevelIn.h"
 #include "MultipleIn.h"
 #include "HierarchicalIn.h"
+#include "HYbridIn.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ int main() {
     D d;
     Rectangle r;
     Triangle t;
+    D2 d2;
 
     return 0;
 
