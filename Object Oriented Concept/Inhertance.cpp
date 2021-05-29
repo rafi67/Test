@@ -4,6 +4,7 @@
 #include "MultipleIn.h"
 #include "HierarchicalIn.h"
 #include "HYbridIn.h"
+#include "Aggregation.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ int main() {
     Rectangle r;
     Triangle t;
     D2 d2;
+    Do d0;
 
     return 0;
 
