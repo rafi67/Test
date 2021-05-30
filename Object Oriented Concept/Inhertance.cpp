@@ -1,22 +1,14 @@
 #include <iostream>
-#include "inHeader.h"
-#include "MultilevelIn.h"
-#include "MultipleIn.h"
-#include "HierarchicalIn.h"
-#include "HYbridIn.h"
-#include "Aggregation.h"
+#include "CompiletimePoly.h"
 
 using namespace std;
 
 int main() {
     
-    B b(12, 12);
-    BabyDog bd;
-    D d;
-    Rectangle r;
-    Triangle t;
-    D2 d2;
-    Do d0;
+    Test t;
+    t.test1((short)12);
+    t.test1(34.5f);
+    t.test1("Five");
 
     return 0;
 
