@@ -1,14 +1,17 @@
 #include <iostream>
-#include "CompiletimePoly.h"
+#include "RuntimePoly.h"
 
 using namespace std;
 
 int main() {
     
-    Test t;
-    t.test1((short)12);
-    t.test1(34.5f);
-    t.test1("Five");
+    A3 *poly;
+    A3 a;
+    B3 b;
+    poly = &a;
+    poly->display();
+    poly = &b;
+    poly->display();
 
     return 0;
 
