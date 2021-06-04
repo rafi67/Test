@@ -1,11 +1,11 @@
 #include <iostream>
-#include "OperatorOverloading.h"
+#include "FunctionOverriding.h"
 
 using namespace std;
 
 int main() {
 
-    T1 t;
+    Test test;
 
     return 0;
 
