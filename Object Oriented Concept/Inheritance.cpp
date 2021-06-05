@@ -1,11 +1,17 @@
 #include <iostream>
-#include "FunctionOverriding.h"
+#include "VirtualFunction.h"
 
 using namespace std;
 
 int main() {
 
-    Test test;
+    A3 *a;
+
+    B3 b;
+
+    a = &b;
+
+    a->display(); 
 
     return 0;
 
