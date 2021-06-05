@@ -1,15 +1,17 @@
 #include <iostream>
-#include "Encapsulation.h"
+#include "Abstract.cpp"
 
 using namespace std;
 
 int main() {
 
-    Employee object;
-    object.setSalary(12000);
-
-    cout << "Salary is " << object.getSalary() << endl;
     
+    Rectangle r;
+    Triangle t;
+
+    r.draw();
+    t.draw();
+
     return 0;
 
 }
