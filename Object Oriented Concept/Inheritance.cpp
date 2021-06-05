@@ -1,17 +1,17 @@
 #include <iostream>
-#include "VirtualFunction.h"
+#include "PureVirtualFunction.h"
 
 using namespace std;
 
 int main() {
 
-    A3 *a;
+    
+    Base *b;
+    Derived d;
 
-    B3 b;
+    b = &d;
 
-    a = &b;
-
-    a->display(); 
+    b->show();
 
     return 0;
 
