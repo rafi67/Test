@@ -1,18 +1,15 @@
 #include <iostream>
-#include "PureVirtualFunction.h"
+#include "Encapsulation.h"
 
 using namespace std;
 
 int main() {
 
+    Employee object;
+    object.setSalary(12000);
+
+    cout << "Salary is " << object.getSalary() << endl;
     
-    Base *b;
-    Derived d;
-
-    b = &d;
-
-    b->show();
-
     return 0;
 
 }
