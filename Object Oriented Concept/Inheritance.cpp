@@ -6,12 +6,17 @@ using namespace std;
 int main() {
 
     
+    Shape *s;
+
     Rectangle r;
     Triangle t;
 
-    r.draw();
-    t.draw();
+    s = &r;
+    s->draw();
 
+    s = &t;
+    s->draw();
+    
     return 0;
 
 }
