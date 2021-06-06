@@ -1,21 +1,15 @@
 #include <iostream>
-#include "Abstract.cpp"
+#include "DataAbstraction.h"
 
 using namespace std;
 
 int main() {
 
     
-    Shape *s;
-
-    Rectangle r;
-    Triangle t;
-
-    s = &r;
-    s->draw();
-
-    s = &t;
-    s->draw();
+    Abstraction a;
+    a.setX(24);
+    a.setY(24);
+    a.add();
     
     return 0;
 
