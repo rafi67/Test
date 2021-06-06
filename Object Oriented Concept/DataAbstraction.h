@@ -1,5 +1,4 @@
 #include <iostream>
-#include <Cmath>
 
 using namespace std;
 
@@ -18,12 +17,8 @@ class Abstraction {
             this->y = y;
         }
 
-        short getX() {
-            return x;
-        }
-
-        short getY() {
-            return y;
+        void display() {
+            cout << "value of x is " << x << endl << "value of y is " << y << endl;
         }
 
 };

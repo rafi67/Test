@@ -7,10 +7,11 @@ int main() {
 
     
     Abstraction a;
-    a.setX(24);
+
+    a.setX(12);
     a.setY(24);
-    short sum = a.getX() + a.getY();
-    cout << "Resutl = " << sum << endl;
+
+    a.display();
     
     return 0;
 
