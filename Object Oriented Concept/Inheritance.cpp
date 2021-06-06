@@ -9,7 +9,8 @@ int main() {
     Abstraction a;
     a.setX(24);
     a.setY(24);
-    a.add();
+    short sum = a.getX() + a.getY();
+    cout << "Resutl = " << sum << endl;
     
     return 0;
 
