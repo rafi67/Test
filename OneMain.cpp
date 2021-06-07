@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     String1 s;
-    s.copy();
+    s.length();
 
     return 0;
 

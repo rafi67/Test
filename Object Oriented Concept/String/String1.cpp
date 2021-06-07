@@ -47,4 +47,9 @@ class String1 {
             cout << "Buffer = " << buffer << endl;
         }
 
+        void length() {
+            char arra[] = "Computer Technology";
+            cout << "Length of array is " << strlen(arra);
+        }
+
 };
