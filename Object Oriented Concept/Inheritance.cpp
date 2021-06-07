@@ -1,17 +1,13 @@
 #include <iostream>
-#include "DataAbstraction.h"
+#include "Namespace.h"
 
 using namespace std;
 
 int main() {
 
     
-    Abstraction a;
-
-    a.setX(12);
-    a.setY(24);
-
-    a.display();
+    First::print();
+    Second::print();
     
     return 0;
 
