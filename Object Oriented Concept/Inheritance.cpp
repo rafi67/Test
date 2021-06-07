@@ -1,12 +1,12 @@
 #include <iostream>
 #include "Namespace.h"
 
-using namespace std;
+using namespace First;
 
 int main() {
 
     
-    First::print();
+    print();
     Second::print();
     
     return 0;
