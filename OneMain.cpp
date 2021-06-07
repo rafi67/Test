@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     String1 s;
-    s.concatenation();
+    s.copy();
 
     return 0;
 

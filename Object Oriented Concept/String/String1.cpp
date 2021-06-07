@@ -38,4 +38,13 @@ class String1 {
             cout << "Buffer = " << buffer << endl;
         }
 
+        void copy() {
+            char key[25], buffer[25];
+            cout << "Enter key String: ";
+            cin.getline(key, 25);
+            strcpy(buffer, key);
+            cout << "Key = " << key << endl;
+            cout << "Buffer = " << buffer << endl;
+        }
+
 };
