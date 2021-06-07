@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     String1 s;
-    s.test1();
+    s.test2();
 
     return 0;
 
