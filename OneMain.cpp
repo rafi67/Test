@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     String1 s;
-    s.test2();
+    s.concatenation();
 
     return 0;
 

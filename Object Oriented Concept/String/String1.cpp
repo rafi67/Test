@@ -6,7 +6,7 @@ using namespace std;
 class String1 {
 
     public:
-        void test1() {
+        void convertion() {
             string s1 = "Hello";
             string convert;
             char ch[] = {'C', '+', '+'};
@@ -15,7 +15,7 @@ class String1 {
             cout << s2 << endl;
         }
 
-        void test2() {
+        void compare() {
             char key[] = "mango";
             char buffer[50];
             do {
@@ -25,6 +25,17 @@ class String1 {
             while(strcmp(key, buffer)!=0);
 
             cout << "Answer is correct!!" << endl;
+        }
+
+        void concatenation() {
+            char key[25], buffer[25];
+            cout << "Enter key string: ";
+            cin.getline(key, 25);
+            cout << "Enter buffer string: ";
+            cin.getline(buffer, 25);
+            strcat(key, buffer);
+            cout << "Key = " << key << endl;
+            cout << "Buffer = " << buffer << endl;
         }
 
 };
