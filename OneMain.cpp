@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
     String1 s;
-    s.length();
+    s.substring();
 
     return 0;
 

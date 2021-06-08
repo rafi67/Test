@@ -52,4 +52,11 @@ class String1 {
             cout << "Length of array is " << strlen(arra);
         }
 
+        void substring() {
+            string name = "Rafi";
+            cout << "Before using substring function Name = " << name << endl;
+            string name2 = name.substr(1,2);
+            cout << "After using substring function Name = " << name2 << endl;
+        }
+
 };
