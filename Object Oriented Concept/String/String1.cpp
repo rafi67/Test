@@ -59,4 +59,23 @@ class String1 {
             cout << "After using substring function Name = " << name2 << endl;
         }
 
+        void find() {
+            string n = "Rafi";
+            cout << "Enter string to find: ";
+            string n2;
+            cin >> n2;
+            int len = n.length();
+            for(int i=0; i<len; i++){
+                int n1 = n.find(n2, i);
+                if(n1 !=-1){
+                    cout<< "String " << n2 << " found" << endl;
+                    break;
+                }
+                else{
+                    cout << "String" << n2 << " not found" << endl;
+                    break;
+                }
+            }
+        }
+
 };
