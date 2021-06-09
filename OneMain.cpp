@@ -4,11 +4,15 @@ using namespace std;
 
 int main() {
 
-    Array<short, 2>a;
-    a.insert(1);
-    a.insert(2);
-    cout << "First value is " << a.get(0) << endl;
-    cout << "Second value is " << a.get(1) << endl;
+    ArrayList <int> a;
+    for(short i=1; i < 18; i++) {
+        a.set(i);
+    }
+
+    for(short i = 0; i < 17; i++) {
+        cout << a.get(i) << endl;
+    }
+
     return 0;
 
 }

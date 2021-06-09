@@ -38,3 +38,36 @@ class Array{
         }
 
 };
+
+template <typename T>
+class ArrayList {
+
+    private:
+        short i = 16, j = 0;
+         T *ptr; 
+
+    public:
+        ArrayList() {
+            ptr = new T[i];
+        }
+        ~ArrayList() {
+            delete ptr;
+        }
+
+        void set(T value) {
+            ptr[j] = value;
+            j++;
+            if(j>15) {
+                memoryAllocator();
+            }
+        }
+
+        T get(short index) {
+            return ptr[index];
+        }
+
+        void memoryAllocator() {
+            i+=2;
+        }
+
+};
