@@ -18,3 +18,23 @@ void Print(X a, Y b) {
     cout << "Value of a is " << a << endl;
     cout << "Value of b is " << b << endl;
 }
+
+
+template <typename T, short size>
+class Array{
+
+    private:
+        T arra[size];
+        short i = 0;
+
+    public:
+        void insert(T value) {
+            arra[i] = value;
+            i++;
+        }
+
+        T get(short index) {
+            return arra[index];
+        }
+
+};

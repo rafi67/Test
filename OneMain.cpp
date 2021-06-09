@@ -4,9 +4,11 @@ using namespace std;
 
 int main() {
 
-    Print("Rafi");
-    cout << "Sum = " << add(12, 12) << endl;
-    Print(12, 12.4f);
+    Array<short, 2>a;
+    a.insert(1);
+    a.insert(2);
+    cout << "First value is " << a.get(0) << endl;
+    cout << "Second value is " << a.get(1) << endl;
     return 0;
 
 }
