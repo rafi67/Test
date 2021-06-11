@@ -9,10 +9,15 @@ class Read {
         void read() {
             string text;
             ifstream filestream("textout.txt");
-            while(getline(filestream, text)) {
+            if(filestream.is_open()) {
+                while(getline(filestream, text)) {
                 cout << text << endl;
             }
             filestream.close();
+            }
+
+            else cout << "Unable to open the file" << endl;
+            
         }
 
 };
