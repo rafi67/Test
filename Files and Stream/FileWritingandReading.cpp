@@ -8,7 +8,7 @@ class Read {
     public:
         void read(string filename) {
             string file;
-            ifstream filestream(filename);
+            fstream filestream(filename);
             while(getline(filestream,file)) {
                 cout << file << endl;
             }
@@ -22,7 +22,7 @@ class Write {
     public:
         void write() {
             char input[25];
-            ofstream filestream("text.txt");
+            fstream filestream("text.txt");
             cout << "Enter your name: ";
             cin.getline(input, 25);
             filestream << input << endl;
