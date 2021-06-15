@@ -22,9 +22,25 @@ class S {
 
 };
 
+class S2 {
+
+    public:
+        void show() {
+            set<short>s{60,20,30,40};
+            s.emplace_hint(s.end(), 50);
+            s.emplace_hint(s.begin(), 10);
+            set<short>::iterator itr;
+            for(itr=s.begin(); itr!=s.end(); itr++) {
+                cout << *itr << ", ";
+            }
+            cout << endl;
+        }
+
+};
+
 int main() {
 
-    S s;
+    S2 s;
     s.show();
 
     return 0;
