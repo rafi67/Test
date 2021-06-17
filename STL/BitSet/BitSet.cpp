@@ -13,10 +13,7 @@ class BS {
             b[1] = 2;
             b[2] = 3;
 
-            for(short i=0; i<b.size(); i++) {
-                cout << i << "\t";
-                cout << b[i] << endl;
-            }
+           cout << b << endl;
         }
 
 };
