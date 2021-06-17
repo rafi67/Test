@@ -16,8 +16,14 @@ class M {
 
             cout << "Natural Order:" << endl;
             
-            for(auto const &x : m) {
-                cout << x.first << ": " << x.second << endl;
+            for(itr1=m.begin(); itr1!=m.end(); itr1++) {
+                cout << (*itr1).first << ": " << (*itr1).second << endl;
+            }
+            
+            cout << "Reverse Order:" << endl;
+
+            for(itr2=m.rbegin(); itr2!=m.rend(); itr2++) {
+                cout << (*itr2).first << ": " << (*itr2).second << endl;
             }
         }
 
