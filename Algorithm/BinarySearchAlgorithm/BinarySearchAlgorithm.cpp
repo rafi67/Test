@@ -6,13 +6,13 @@ short b_s_al(short a[], short n, short x) {
 
     short i, left = 0, right = n-1, mid;
 
-    for(i=0; i<n; i++) {
+    while(left<=right) {
         mid = (left+right)/2;
         if(a[mid]==x) {
             return mid;
         }
-        else if(a[mid]<x) left = mid+1;
-        else if(a[mid]>x) right = mid-1; 
+        if(a[mid]<x) left = mid+1;
+        else right = mid-1; 
     }
 
     return -1;
@@ -22,11 +22,11 @@ short b_s_al(short a[], short n, short x) {
 int main() {
 
     short n;
-    short a[5];
     short input;
 
     cout << "Enter the size of element: ";
     cin >> n;
+    short a[n];
     
     cout << "Enter " << n << " elements: " << endl;
     for(short i=0; i<n; i++) {
